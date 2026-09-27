@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07100f">
+  <meta name="description" content="Dev Kumar — platform security engineer building secure-by-default cloud platforms, identity systems, and software supply chains.">
+  <title>Dev Kumar — Platform Security Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="wordmark" href="#top" aria-label="Dev Kumar home"><span class="wordmark-mark">DK</span><span>DEV KUMAR</span></a>
+      <nav aria-label="Main navigation"><a href="#approach">Approach</a><a href="#experience">Experience</a><a href="#work">Selected work</a></nav>
+      <a class="top-cta" href="mailto:devkumar.dklv@gmail.com">Let’s connect <span>↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero section-pad">
+        <div class="hero-bg" aria-hidden="true"><div class="hero-glow glow-a"></div><div class="hero-glow glow-b"></div><div class="grid-horizon"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-noise"></div></div>
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="live-dot"></span> PLATFORM SECURITY · CHICAGO, IL</div>
+          <h1>Trust is built<br>into <em>every layer.</em></h1>
+          <p class="hero-lede">I engineer secure-by-default platforms that protect people and data while keeping product teams moving.</p>
+          <div class="rotating-line"><span class="rotator-label">FOCUSING ON</span><span id="rotating-text" aria-live="polite">Identity that travels with every workload</span><span class="cursor">_</span></div>
+          <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span>↓</span></a><a class="button button-quiet" href="mailto:devkumar.dklv@gmail.com">Get in touch <span>↗</span></a></div>
+          <div class="proof-strip"><div><strong>75%</strong><span>fewer critical Kubernetes<br>misconfigurations</span></div><i></i><div><strong>100%</strong><span>production images signed<br>and verified</span></div><i></i><div><strong>21 → 5</strong><span>days to remediate<br>vulnerability findings</span></div></div>
+        </div>
+        <div class="hero-visual" aria-label="Animated illustration of secure workload identity and verified deployment">
+          <div class="visual-caption caption-top"><span class="caption-pulse"></span> TRUST FABRIC <span class="caption-code">LIVE MAP / 01</span></div>
+          <svg class="trust-visual" viewBox="0 0 660 560" role="img" aria-labelledby="trust-title trust-desc">
+            <title id="trust-title">Secure platform trust fabric</title><desc id="trust-desc">Identity, signed artifacts and policy gates connect to a protected cloud workload, with telemetry flowing back into response.</desc>
+            <defs><linearGradient id="shieldFill" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#1b6c57" stop-opacity=".5"/><stop offset="1" stop-color="#102727" stop-opacity=".12"/></linearGradient><linearGradient id="lineGlow"><stop stop-color="#65edba" stop-opacity=".05"/><stop offset=".5" stop-color="#65edba"/><stop offset="1" stop-color="#65edba" stop-opacity=".08"/></linearGradient><filter id="softGlow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+            <g class="diagram-grid"><path d="M0 80H660M0 160H660M0 240H660M0 320H660M0 400H660M0 480H660M80 0V560M160 0V560M240 0V560M320 0V560M400 0V560M480 0V560M560 0V560"/></g>
+            <path class="trace trace-a" d="M107 185 C160 185 150 276 237 276 S290 171 352 171 S425 258 512 258"/><path class="trace trace-b" d="M107 378 C161 378 172 295 237 295 S303 396 368 396 S432 314 512 314"/><path class="trace trace-c" d="M105 185 C120 255 137 312 107 378"/>
+            <circle class="trace-point point-a" cx="236" cy="276" r="5"/><circle class="trace-point point-b" cx="352" cy="171" r="5"/><circle class="trace-point point-c" cx="368" cy="396" r="5"/>
+            <g class="node node-identity"><rect x="42" y="145" width="130" height="78" rx="15"/><circle cx="73" cy="183" r="15"/><path d="M67 183l4 4 9-10"/><text x="99" y="180">IDENTITY</text><text class="node-sub" x="99" y="198">OIDC · mTLS</text></g>
+            <g class="node node-supply"><rect x="42" y="339" width="130" height="78" rx="15"/><path d="M63 375l10-8 10 8-10 8zM73 367v-9m-9 21v11h19v-11"/><text x="99" y="373">PROVENANCE</text><text class="node-sub" x="99" y="391">SBOM · Cosign</text></g>
+            <g class="node node-policy"><rect x="211" y="239" width="119" height="76" rx="15"/><path d="M233 261h15v15h-15zM237 267l3 3 6-7"/><text x="259" y="272">POLICY</text><text class="node-sub" x="259" y="290">admission gate</text></g>
+            <g class="node node-runtime"><rect x="330" y="354" width="128" height="77" rx="15"/><path d="M350 382h18m-9-9v18m-8 9h16"/><text x="379" y="386">RUNTIME</text><text class="node-sub" x="379" y="404">isolate · observe</text></g>
+            <g class="core"><circle class="core-halo" cx="535" cy="286" r="97"/><circle class="core-ring" cx="535" cy="286" r="81"/><path class="shield" d="M535 221l48 18v40c0 39-20 64-48 80-28-16-48-41-48-80v-40z"/><path class="shield-check" d="M514 279l14 14 30-32"/><text class="core-title" x="535" y="325" text-anchor="middle">TRUSTED</text><text class="core-sub" x="535" y="342" text-anchor="middle">WORKLOAD</text></g>
+            <g class="signal signal-one"><circle r="4"/><animateMotion dur="4s" repeatCount="indefinite" path="M107 185 C160 185 150 276 237 276 S290 171 352 171 S425 258 512 258"/></g><g class="signal signal-two"><circle r="4"/><animateMotion dur="5s" repeatCount="indefinite" path="M107 378 C161 378 172 295 237 295 S303 396 368 396 S432 314 512 314"/></g>
+            <text class="svg-label label-1" x="199" y="148">ASSERTION</text><text class="svg-label label-2" x="380" y="222">ATTESTED</text><text class="svg-label label-3" x="423" y="451">TELEMETRY</text>
+          </svg>
+          <div class="visual-caption caption-bottom"><span>ZERO TRUST BY DESIGN</span><span class="caption-code">POLICY → PROOF → PROTECTION</span></div>
+        </div>
+        <a class="scroll-cue" href="#approach"><span></span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <section id="approach" class="approach section-pad">
+        <div class="section-head"><div><div class="eyebrow">01 / ENGINEERING PRINCIPLES</div><h2>Security that helps<br>teams <em>ship with confidence.</em></h2></div><p class="section-intro">I treat security as a platform capability: clear defaults, verifiable controls, and useful feedback built directly into the developer journey.</p></div>
+        <div class="principle-grid">
+          <article class="principle-card"><div class="card-index">01 <span>IDENTITY</span></div><div class="principle-icon icon-orbit"><i></i><b></b><span></span></div><h3>Every request earns trust</h3><p>OIDC, scoped authorization, workload identity and automatically rotated mTLS keep access short-lived and intentional.</p><div class="tag-row"><span>OAuth2 / OIDC</span><span>PKI</span><span>Zero trust</span></div></article>
+          <article class="principle-card"><div class="card-index">02 <span>INTEGRITY</span></div><div class="principle-icon icon-seal"><span>✓</span><i></i></div><h3>Prove what runs</h3><p>Signed images, SBOMs and vulnerability gates establish a traceable path from source to production.</p><div class="tag-row"><span>Cosign</span><span>SBOM</span><span>Trivy</span></div></article>
+          <article class="principle-card"><div class="card-index">03 <span>GUARDRAILS</span></div><div class="principle-icon icon-gate"><i></i><i></i><i></i><b></b></div><h3>Make the safe path simple</h3><p>Policy as code, hardened templates and thoughtful admission controls prevent risky defaults before they ship.</p><div class="tag-row"><span>OPA</span><span>Kubernetes</span><span>Terraform</span></div></article>
+          <article class="principle-card"><div class="card-index">04 <span>RESILIENCE</span></div><div class="principle-icon icon-pulse"><svg viewBox="0 0 90 38"><path d="M2 20h18l8-14 12 27 11-19 8 6h29"/></svg></div><h3>Learn from every signal</h3><p>Detection, incident response and blameless reviews turn operational evidence into stronger systems.</p><div class="tag-row"><span>Falco</span><span>Response</span><span>Runbooks</span></div></article>
+        </div>
+      </section>
+
+      <section class="architecture section-pad">
+        <div class="section-head architecture-heading"><div><div class="eyebrow">02 / THE TRUST PATH</div><h2>Controls that connect<br>from <em>commit to runtime.</em></h2></div><p class="section-intro">A healthy platform makes trust visible at each boundary, then uses the evidence to improve the next release.</p></div>
+        <div class="architecture-panel">
+          <div class="architecture-top"><span class="mono-label">REFERENCE FLOW / SECURE PLATFORM</span><span class="status"><i></i> CONTROL PLANE ACTIVE</span></div>
+          <div class="flow-line"><div class="flow-node"><span class="flow-number">01</span><div class="flow-icon">⌘</div><strong>Developer</strong><small>secure templates</small></div><div class="flow-connector"><span>push</span></div><div class="flow-node"><span class="flow-number">02</span><div class="flow-icon">✳</div><strong>Build & attest</strong><small>scan · sign · SBOM</small></div><div class="flow-connector"><span>verify</span></div><div class="flow-node featured"><span class="flow-number">03</span><div class="flow-icon">◈</div><strong>Policy gate</strong><small>identity · provenance</small></div><div class="flow-connector"><span>admit</span></div><div class="flow-node"><span class="flow-number">04</span><div class="flow-icon">▦</div><strong>Workload</strong><small>least privilege · mTLS</small></div><div class="flow-connector"><span>observe</span></div><div class="flow-node"><span class="flow-number">05</span><div class="flow-icon">⌁</div><strong>Response</strong><small>signals · learning</small></div></div>
+          <div class="architecture-bottom"><span><i class="mini-check">✓</i> Default-deny network boundaries</span><span><i class="mini-check">✓</i> Ephemeral workload credentials</span><span><i class="mini-check">✓</i> Actionable developer feedback</span></div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience section-pad">
+        <div class="section-head"><div><div class="eyebrow">03 / EXPERIENCE</div><h2>Building guardrails<br>at <em>production scale.</em></h2></div><p class="section-intro">Eight years across platform security, application security and infrastructure—measured in safer launches, fewer incidents and less friction for engineers.</p></div>
+        <div id="experience-list" class="experience-list"></div>
+      </section>
+
+      <section class="impact section-pad"><div class="impact-inner"><div class="impact-orb" aria-hidden="true"><div class="impact-orb-core">75<span>%</span></div><i class="impact-ring ring-1"></i><i class="impact-ring ring-2"></i><i class="impact-ring ring-3"></i><b class="impact-pip pip-1"></b><b class="impact-pip pip-2"></b></div><div class="impact-copy"><div class="eyebrow">A PRACTICAL MEASURE OF CARE</div><h2>Protect the platform.<br><em>Respect the people using it.</em></h2><p>Security work matters when it changes the everyday experience: fewer insecure defaults, clearer review paths and faster recovery when something goes wrong. That is the part of engineering I keep coming back to.</p><div class="impact-metrics"><div><strong>12</strong><span>services on shared<br>secure foundations</span></div><div><strong>30+</strong><span>risks surfaced before<br>launch through threat modeling</span></div><div><strong>0</strong><span>long-lived static credentials<br>for protected workloads</span></div></div></div></div></section>
+
+      <section id="work" class="work section-pad">
+        <div class="section-head"><div><div class="eyebrow">04 / SELECTED WORK</div><h2>Systems built with<br><em>trust in mind.</em></h2></div><p class="section-intro">A collection spanning operating systems, data infrastructure, secure cloud platforms and thoughtful developer tools.</p></div>
+        <div class="filter-bar"><span class="mono-label">PROJECT INDEX <b id="project-count">22</b></span><div class="filters" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all">All work</button><button class="filter" data-filter="systems">Systems</button><button class="filter" data-filter="security">Security</button><button class="filter" data-filter="platform">Platform & AI</button></div></div>
+        <div id="project-grid" class="project-grid"></div>
+      </section>
+
+      <section class="credentials section-pad"><div class="credentials-copy"><div class="eyebrow">05 / RESEARCH & COMMUNITY</div><h2>Curiosity, carried<br><em>into the work.</em></h2><p>Research and practice inform each other. I enjoy exploring how technical choices affect reliability, safety and the people who depend on the systems we build.</p><div class="credential-links"><a href="https://ieeexplore.ieee.org/document/10094480" target="_blank" rel="noreferrer">IEEE publication <span>↗</span></a><a href="https://github.com/devthedevil/Comparative-Study-of-Movie-Recommendation-System/blob/main/Netflix_Movie.ipynb" target="_blank" rel="noreferrer">Research source notebook <span>↗</span></a><a href="https://drive.google.com/file/d/1rayr6Cht6quyLUJOXWOAcBi_rxQp2Ol0/view" target="_blank" rel="noreferrer">Certificate <span>↗</span></a></div></div><div class="credentials-card"><div class="paper-art"><span class="paper-orbit orbit-a"></span><span class="paper-orbit orbit-b"></span><span class="paper-core">IEEE</span><span class="paper-dot"></span></div><div class="paper-meta"><span class="mono-label">PUBLICATION / FEATURE ENGINEERING</span><h3>Comparative Study of Movie Recommendation Systems using Feature Engineering</h3><div class="paper-link-row"><a href="https://ieeexplore.ieee.org/document/10094480" target="_blank" rel="noreferrer">Read paper ↗</a><a href="https://github.com/devthedevil/Comparative-Study-of-Movie-Recommendation-System/blob/main/Netflix_Movie.ipynb" target="_blank" rel="noreferrer">View source ↗</a></div></div></div></section>
+
+      <section class="contact section-pad"><div class="contact-grid" aria-hidden="true"></div><div class="contact-content"><div class="eyebrow"><span class="live-dot"></span> OPEN TO GOOD CONVERSATIONS</div><h2>Let’s make the<br><em>secure choice</em><br>the easy one.</h2><a class="contact-button" href="mailto:devkumar.dklv@gmail.com">devkumar.dklv@gmail.com <span>↗</span></a><div class="social-links"><a href="https://github.com/devthedevil" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><a href="https://scholar.google.com/citations?user=VXIu5a4AAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar <span>↗</span></a><a href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">LeetCode <span>↗</span></a></div></div><div class="contact-stamp"><span>DEV<br>KUMAR</span><i>PLATFORM<br>SECURITY<br>ENGINEERING</i></div></section>
+    </main>
+  </div>
+</body>
+</html>
